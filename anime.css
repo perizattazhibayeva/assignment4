@@ -1,0 +1,224 @@
+        .none{
+            text-decoration: none;
+        }
+
+        .v{ /*to put the video on the background*/
+            background-color: black;
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            padding: 0;
+            margin-left: -50%;
+            z-index: -1;
+        }
+
+        .onvideo{ /*everything that is on video*/
+            width: 100%;
+            height: 91vh;
+            z-index: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .onvideo > a > button{
+            color:black;
+            font-family: 'Quicksand', serif;
+            border: none;
+            border-radius: 25px;
+            font-size: 25px;
+            width: 150%;
+            height: 40px;
+            border: 2px solid black;
+            margin-left: -25%;
+            transition: 0.3s;
+        }
+
+        .onvideo > a > button:hover{
+            transform: translateY(-7px);
+            background-color: crimson;
+            border: none;
+            color: white;
+        }
+
+        .blackline{
+            width: 100%;
+            height: 9vh;
+            z-index: 0;
+            background-color: rgba(0, 0, 0, 1);
+            border-top: 2px solid white;
+        }
+
+        .watch{
+            background-color: black;
+            padding-bottom: 35px;
+            border-bottom: 2px solid white;
+        }
+
+        .watch > p{
+            font-size: 40px; 
+            margin-top: -3%; 
+            padding-bottom: 2%; 
+            margin-bottom: 0;
+        }
+
+        .watch > p > span:before{
+            padding-bottom: 0;
+        }
+
+        .watch > p > span{
+            color: crimson;
+        }
+
+        .episodes{
+            background-color: black;
+            padding-bottom: 2%;
+            flex-direction: row;
+            overflow: auto; /*creates scrolls when needed*/
+            white-space: nowrap; /* everything is on one line*/
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .ep{
+            display: inline-block;
+            margin-left: 3%;
+            width: 300px;
+            height: 200px;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+
+        .scene{
+            width: 100%;
+            height: 150px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-size: cover;
+            display: flex;
+            align-items: stretch;
+            justify-content: stretch;
+        }
+
+        .scene > .desc{
+            opacity: 0;
+            transition: 0.2 s;
+            font-size: 13px;
+            width: 94%;
+            padding: 3%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .scene>.desc:hover{
+            opacity: 1;
+        }
+
+        .sdesc{
+            width: 100%;
+            height: 49.5px;
+            background-color: black;
+            color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sdesc:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .sdesc > .epname{
+            border-right: 1px solid white; 
+            padding-right: 5%;
+        }
+
+        .sdesc > .epnumber{
+            padding-left: 5%;
+        }
+
+        .myh{
+            font-size: 500%; 
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .myhh{
+            font-size: 250%;
+            margin: 0; 
+            padding: 0;
+            color: crimson;
+        }
+
+        .article{
+            width: 80%;
+            text-align: justify;
+            padding-bottom: 5%;
+        }
+
+        .rimg{
+            margin-bottom: 10px;
+            margin-left: 20px;
+            height: 200px; 
+            float: right; /*image is on the right*/
+        }
+
+        .d{
+            border-top: 1px solid white;
+            display: grid;
+            grid-template-columns: 1fr 3.5fr;
+        }
+
+        .dd{
+            padding-top: 3px;
+            padding-left: 3px;
+            border-right: 1px solid white;
+        }
+
+        .dd > *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .new:hover >.d, .new:hover>.d >.dd{
+            border-color: crimson;
+            color: crimson;
+        }
+
+        .new:hover{
+            transform: rotate(5deg);
+        }
+
+        .h4{
+            font-size: 50px; 
+            margin-bottom: 2%;
+        }
+
+        @media only screen and (max-width: 900px){
+            .v{
+                min-height: 200px;
+            }
+
+            .onvideo{
+                height: 350px;
+            }
+    
+            .onvideo > a > button{
+                font-size: 20px;
+                height: 30px;
+            }
+
+            .h4{
+                font-size: 30px;
+            }
+    
+            .onvideo > a > button:hover{
+                transform: none;
+            }
+        }

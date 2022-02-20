@@ -1,0 +1,107 @@
+body{
+    overflow-x: hidden;
+}
+
+.a{
+    text-decoration: none;
+    color: white;
+    float:right;
+}
+
+.a:hover{
+    color: crimson;
+}
+
+.news{ /*120% of the screen is taken*/
+    border-top: 2px solid white;
+    width: 100%;
+    padding: 0 10%;
+}
+
+h3{
+    font-size: xx-large;
+}
+
+.section{ /*news and aside*/
+    display: grid;
+    grid-template-columns: 5.25fr 2.75fr 2fr;
+}
+
+.s{
+    border: 2px solid white;
+    height: 200px;
+    width: 100%;
+    margin: 3.5% 0;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+
+.s:hover{
+    border-color: crimson;
+}
+
+.ii{
+    background-position: center;
+    background-size: cover;
+}
+
+.in{
+    padding: 0 3%;
+}
+
+h4{
+    margin: 0;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+h5{
+    margin: 0;
+    font-size: large;
+    color: crimson;
+}
+
+.aside{
+    width: 80%;
+    padding: 2%;
+    background-color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    border: 5px solid crimson;
+}
+
+.aside > img{
+    width: 80%;
+}
+
+@media only screen and (max-width:900px){
+    .news{
+        border: none;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .s{
+        height: 250px;
+    }
+
+    .a{
+        margin-top: 30px;
+    }
+
+    .aside{
+        display: none;
+    }
+}
+

@@ -1,0 +1,110 @@
+.ch-head{
+    background-image: url(stock/characters.png);
+    background-size: cover;
+    height: 470px;
+    width: 100%;
+}
+
+.description{
+    float: right;
+    padding-right: 2%;
+    margin-right: 8%;
+    margin-top: 3%;
+    border-right: 2px solid white;
+}
+
+.description > p{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+
+.description > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+.description > p > a:hover{
+    color: crimson;
+}
+
+.main-chs{
+    background-color: black;
+    width: 100%;
+}
+
+.main-chs > p{
+    margin: 0; 
+    font-size: 250%; 
+    padding: 2% 0;
+}
+
+.cards{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 3%;
+}
+
+.card{
+    margin: 5%;
+    height: 300px;
+    border: 4px solid rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card > a{
+    text-decoration: none;
+    color: black;
+}
+
+.chead{
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cdesc{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cdesc > *{
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.gap{
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 800px) {
+    .ch-head{
+        display: none;
+    }
+
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width:1200px) {
+    .ch-head{
+        display: none;
+    }
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

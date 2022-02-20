@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+}
+
+.author{
+    padding-top: 3.5%;
+    padding-bottom: 1%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 6.5fr 3.5fr;
+    border-top: 2px solid white;
+}
+
+.author > div{
+    padding-left: 15%;
+}
+
+#demo-svg{
+    margin-left: -5%;
+}
+
+#demo-svg path{
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 0;
+}
+
+.iconimg > img{
+    width: 50%;
+}
+
+.info{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-top: 2%;
+    padding: 0.5% 1%;
+    width: 80%;
+    border: 2px solid white;
+}
+
+.info:hover, .info:hover p{
+    border-color: crimson;
+}
+
+.info:hover h2{
+    color: crimson;
+}
+
+.info > h2{
+    padding: 0.5% 1%;
+}
+
+.info > p{
+    padding: 2%;
+    border-left: 2px solid white;
+}
+
+.info > p > span{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.info:hover p > span{
+    color: crimson;
+}
+
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.socials > a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials > a > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+.socials > a:hover div{
+    transform: scale(1.1);
+    border-color: crimson;
+    color: crimson;
+}
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1100px){
+    .author{
+        display: none;
+    }
+
+    .mobile{
+        font-size: 34px;
+        font-weight: bold;
+        color: crimson;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mobile > p{
+        margin: 0;
+    }
+
+    .socials{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1400px){
+    .iconimg{
+        display: none;
+    }
+
+    .socials{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
