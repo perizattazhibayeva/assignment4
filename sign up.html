@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/000000/tanjiro-kamado.png">
+    <link href="css/l&s.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+    $(document).ready(function(){
+        $(".form").hide();
+        $(".log-btn").click(function(){
+            $(".form").show(1000);
+            $(".forms").hide(1000);
+        });
+        $(".sign-btn").click(function(){
+            $(".form").hide(1000);
+            $(".forms").show(1000);
+        });
+    });
+    </script>
+    
+    <title>sign up</title>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <a><button class="m bb log-btn">Log in</button></a>
+            <a><button class="m bb sign-btn">Sign up</button></a>
+            <div class="down">
+                <a href="project.html"><button class="m bb">back</button></a>
+            </div>
+        </div>
+        <div class="back">
+            <div class="form">
+                <div class="inputs">
+                    <p>email</p>
+                    <input type="email" name="login">
+                    <p>password</p>
+                    <input type="password" name="password">
+                </div>
+                <div class="login">
+                    <button>log in</button>
+                    <a href="sign up.html">didn't sign up?</a>
+                </div>
+            </div>
+            <div class="forms">
+                <div class="inputs">
+                    <p>username</p>
+                    <input type="text" name="username">
+                    <p>email</p>
+                    <input type="email" name="login">
+                    <p>password</p>
+                    <input type="password" name="password">
+                    <p>choose your gender</p>
+                    <div class="gender" align="center">
+                        <label style="margin-right: 40px; margin-left: -25px;"><input type="radio" name="gender">male</label>
+                        <label><input type="radio" name="gender">female</label>
+                    </div>
+                    <p>choose your preferences:</p>
+                    <div class="pref">
+                        <label><input type="checkbox" name="">anime</label><br>
+                        <label><input type="checkbox" name="">manga</label><br>
+                        <label><input type="checkbox" name="">news</label><br>
+                        <label><input type="checkbox" name="">characters</label>
+                    </div>
+                    <p style="margin-bottom: 0;">choose your region</p>
+                    <select style="width: 40%;">
+                        <option>Asia</option>
+                        <option>America</option>
+                        <option>Europe</option>
+                        <option>Australia</option>
+                        <option>Africa</option>
+                    </select>
+                    <p style="margin-top: 10px; margin-bottom: 0;">your comments</p>
+                    <div>
+                        <textarea class="ta"></textarea>
+                    </div>
+                </div>
+                <div class="login">
+                    <button>sign up</button>
+                    <a href="project.html">already have an account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
